@@ -1,0 +1,19 @@
+parameter 	     Description
+root= 	         Root filesystem. See init/do_mounts.c for supported device name formats.
+rootflags= 	     Root filesystem mount options.
+ro 	             Mount root device read-only on boot (default1).
+rw 	             Mount root device read-write on boot.
+initrd= 	       Specify the location of the initial ramdisk.
+init= 	         Run specified binary instead of /sbin/init as init process. The systemd-sysvcompat package symlinks /sbin/init to /usr/lib/systemd/systemd to use systemd.
+init=/bin/sh 	   Boot to shell.
+systemd.unit= 	 Boot to a specified target.
+resume= 	       Specify a swap device to use when waking from hibernation.
+nomodeset 	     Disable Kernel mode setting.
+zswap.enabled 	 Enable Zswap.
+panic= 	         Time before automatic reboot on kernel panic.
+debug 	         Enable kernel debugging (events log level).
+mem= 	           Force usage of a specific amount of memory to be used.
+maxcpus= 	       Maximum number of processors that an SMP kernel will bring up during bootup.
+selinux= 	       Disable or enable SELinux at boot time.
+netdev= 	       Network devices parameters.
+video= 	         Override framebuffer video defaults. 

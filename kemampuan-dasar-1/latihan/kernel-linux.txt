@@ -1,0 +1,8 @@
+root@debian:~# uname -a         //menampilkan informasi yang lengkap tentang versi kernel hingga arsitektur mesin yang digunakan
+Linux debian 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2 (2019-08-28) x86_64 GNU/Linux
+
+root@debian:~# uname -r         //menampilkan versi linux
+4.19.0-6-amd64
+
+uname -v                        //melihat kernel linux kita yang sudah terinstall
+#1 SMP Debian 4.19.67-2 (2019-08-28)

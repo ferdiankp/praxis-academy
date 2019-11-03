@@ -1,0 +1,155 @@
+root@debian:~# echo "Selamat Datang"
+Selamat Datang
+
+root@debian:~# nano contoh.sh
+#!/bin/bash
+echo "Selamat Datang"
+
+root@debian:~# bash First.sh
+Selamat Datang
+
+root@debian:~# chmod a+x First.sh
+root@debian:~# ./First.sh
+Selamat Datang
+
+root@debian:~# nano contoh.sh
+#!/bin/bash
+echo "Printing text with newline"
+echo -n "Printing text without newline"
+echo -e "\nRemoving \t backslash \t characters\n"
+
+root@debian:~# bash contoh.sh
+Printing text with newline
+Printing text without newline
+Removing 	 backslash 	 characters
+
+root@debian:~# nano itungan.sh
+#!/bin/bash
+# Add two numeric value
+((sum=25+35))
+#Print the result
+echo $sum
+
+root@debian:~# bash itungan.sh
+60
+
+root@debian:~# nano multi-itungan.sh
+#!/bin/bash
+: '
+The following script calculates
+the square value of the number, 5.
+'
+((area=5*5))
+echo $area
+
+root@debian:~# bash multi-itungan.sh
+25
+
+root@debian:~# nano while.sh
+#!/bin/bash
+valid=true
+count=1
+while [ $valid ]
+do
+echo $count
+if [ $count -eq 5 ];
+then
+break
+fi
+((count++))
+done
+
+root@debian:~# bash while.sh
+1
+2
+3
+4
+5
+
+root@debian:~# nano for.sh
+#!/bin/bash
+for (( counter=10; counter>0; counter-- ))
+do
+echo -n "$counter "
+done
+printf "\n"
+root@debian:~# bash for.sh
+10 9 8 7 6 5 4 3 2 1
+
+root@debian:~# nano user.sh
+#!/bin/bash
+echo "Enter Your Name"
+read name
+echo "Welcome $name to Linux"
+root@debian:~# bash user.sh
+Enter Your Name
+Ferdian
+Welcome Ferdian to Linux
+
+root@debian:~# nano if.sh
+#!/bin/bash
+n=10
+if [ $n -lt 10 ];
+then
+echo "It is a one digit number"
+else
+echo "It is a two digit number"
+fi
+root@debian:~# bash if.sh
+It is a two digit number
+
+root@debian:~# nano ifAND.sh
+!/bin/bash
+
+echo "Enter username"
+read username
+echo "Enter password"
+read password
+
+if [[ ( $username == "admin" && $password == "12345" ) ]]; then
+echo "valid user"
+else
+echo "invalid user"
+fi
+root@debian:~# bash ifAND.sh
+ifAND.sh: line 1: !/bin/bash: No such file or directory
+Enter username
+admin
+Enter password
+admin
+invalid user
+root@debian:~# bash ifAND.sh
+ifAND.sh: line 1: !/bin/bash: No such file or directory
+Enter username
+admin
+Enter password
+12345
+valid user
+
+root@debian:~# nano line.sh Linux Debian Makin Jaya
+#!/bin/bash
+echo "Total arguments : $#"
+echo "1st Argument = $1"
+echo "2nd argument = $2"
+echo "3nd argument = $3"
+root@debian:~# bash line.sh Linux Debian Makin Jaya
+Total arguments : 4
+1st Argument = Linux
+2nd argument = Debian
+3nd argument = Makin
+
+root@debian:~# nano date.sh
+#!/bin/bash
+Year=`date +%Y`
+Month=`date +%m`
+Day=`date +%d`
+Hour=`date +%H`
+Minute=`date +%M`
+Second=`date +%S`
+echo `date`
+echo "Current Date is: $Day-$Month-$Year"
+echo "Current Time is: $Hour:$Minute:$Second"
+root@debian:~# bash date.sh
+Sun 03 Nov 2019 10:06:30 PM WIB
+Current Date is: 03-11-2019
+Current Time is: 22:06:30

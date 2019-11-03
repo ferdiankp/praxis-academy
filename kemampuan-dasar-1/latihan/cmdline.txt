@@ -1,0 +1,161 @@
+Guru99
+
+1. root@debian:~# ls
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos
+
+2. root@debian:~# ls -R
+.:
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos
+
+./Desktop:
+wps-office-et.desktop	wps-office-wpp.desktop
+wps-office-pdf.desktop	wps-office-wps.desktop
+
+./Documents:
+
+./Downloads:
+1  sublime_text_3  sublime_text_3_build_3211_x64.tar.bz2
+
+./Downloads/1:
+peazip_6.9.2.LINUX.GTK2-2_i386.deb  unetbootin_292_i386.deb
+synaptic_0.84.6_i386.deb
+
+./Downloads/sublime_text_3:
+changelog.txt	Icon	  plugin_host	 sublime_plugin.py  sublime_text
+crash_reporter	Packages  python3.3.zip  sublime.py	    sublime_text.desktop
+
+./Downloads/sublime_text_3/Icon:
+128x128  16x16	256x256  32x32	48x48
+
+./Downloads/sublime_text_3/Icon/128x128:
+sublime-text.png
+
+./Downloads/sublime_text_3/Icon/16x16:
+sublime-text.png
+
+./Downloads/sublime_text_3/Icon/256x256:
+sublime-text.png
+
+./Downloads/sublime_text_3/Icon/32x32:
+sublime-text.png
+
+./Downloads/sublime_text_3/Icon/48x48:
+sublime-text.png
+
+./Downloads/sublime_text_3/Packages:
+ ActionScript.sublime-package		   Makefile.sublime-package
+ AppleScript.sublime-package		   Markdown.sublime-package
+ ASP.sublime-package			   Matlab.sublime-package
+'Batch File.sublime-package'		   Objective-C.sublime-package
+ Clojure.sublime-package		   OCaml.sublime-package
+'Color Scheme - Default.sublime-package'   Pascal.sublime-package
+'Color Scheme - Legacy.sublime-package'    Perl.sublime-package
+ CSS.sublime-package			   PHP.sublime-package
+ C#.sublime-package			   Python.sublime-package
+ C++.sublime-package			   Rails.sublime-package
+ Default.sublime-package		  'Regular Expressions.sublime-package'
+ Diff.sublime-package			   RestructuredText.sublime-package
+ D.sublime-package			   R.sublime-package
+ Erlang.sublime-package			   Ruby.sublime-package
+'Git Formats.sublime-package'		   Rust.sublime-package
+ Go.sublime-package			   Scala.sublime-package
+ Graphviz.sublime-package		   ShellScript.sublime-package
+ Groovy.sublime-package			   SQL.sublime-package
+ Haskell.sublime-package		   TCL.sublime-package
+ HTML.sublime-package			   Textile.sublime-package
+ JavaScript.sublime-package		   Text.sublime-package
+ Java.sublime-package			  'Theme - Default.sublime-package'
+'Language - English.sublime-package'	   Vintage.sublime-package
+ LaTeX.sublime-package			   XML.sublime-package
+ Lisp.sublime-package			   YAML.sublime-package
+ Lua.sublime-package
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./Templates:
+'DOCX 文档.docx'  'PPTX 演示文稿.pptx'	'XLSX 工作表.xlsx'
+'DOC 文档.doc'	  'PPT 演示文稿.ppt'	'XLS 工作表.xls'
+
+./Videos:
+
+3. root@debian:~# ls -all
+total 112
+drwx------ 21 root root 4096 Nov  3 20:42 .
+drwxr-xr-x 18 root root 4096 Oct 15 00:15 ..
+-rw-------  1 root root 3626 Nov  3 20:40 .bash_history
+-rw-r--r--  1 root root  570 Jan 31  2010 .bashrc
+drwx------ 11 root root 4096 Nov  3 20:14 .cache
+drwxr-xr-x 17 root root 4096 Nov  3 17:52 .config
+drwxr-xr-x  2 root root 4096 Nov  1 01:08 Desktop
+-rw-r--r--  1 root root   35 Oct 15 19:23 .dmrc
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 Documents
+drwxr-xr-x  4 root root 4096 Nov  1 01:03 Downloads
+drwx------  3 root root 4096 Oct 15 19:23 .gnupg
+drwxr--r--  2 root root 4096 Nov  3 19:34 .hardinfo
+drwxr-xr-x  3 root root 4096 Oct 15 19:23 .local
+drwx------  2 root root 4096 Sep  7 20:05 .mozc
+drwx------  5 root root 4096 Oct 15 23:28 .mozilla
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 Music
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 Pictures
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 Public
+drwx------  2 root root 4096 Oct 16 00:56 .synaptic
+drwxr-xr-x  2 root root 4096 Nov  1 01:08 Templates
+drwx------  4 root root 4096 Oct 15 23:27 .thumbnails
+drwx------  3 root root 4096 Oct 16 00:56 .uim.d
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 Videos
+drwxr-xr-x  2 root root 4096 Oct 15 19:23 .wicd
+-rw-------  1 root root  153 Nov  3 20:42 .Xauthority
+-rw-------  1 root root  760 Nov  3 20:42 .xsession-errors
+-rw-------  1 root root  760 Nov  3 18:44 .xsession-errors.old
+
+4. root@debian:~# ls -a
+.	       .config	  .gnupg     Music	Templates    .Xauthority
+..	       Desktop	  .hardinfo  Pictures	.thumbnails  .xsession-errors
+.bash_history  .dmrc	  .local     .profile	.uim.d	     .xsession-errors.old
+.bashrc        Documents  .mozc      Public	Videos
+.cache	       Downloads  .mozilla   .synaptic	.wicd
+
+5. root@debian:~# cat > fileku
+Ini adalah Contoh 
+root@debian:~# cat fileku
+Ini adalah Contoh 
+
+6. root@debian:~# cat > filekm
+Ini adalah Kamu 
+root@debian:~# cat fileku filekm > filekita
+root@debian:~# cat filekita
+Ini adalah Contoh 
+Ini adalah Kamu
+
+7. root@debian:~# ls
+Desktop    Downloads  filekm  Music	Public	   Videos
+Documents  filekita   fileku  Pictures	Templates
+root@debian:~# rm fileku
+root@debian:~# ls
+Desktop    Downloads  filekm  Pictures	Templates
+Documents  filekita   Music   Public	Videos
+
+8. root@debian:~# cp filekm /root/Downloads
+root@debian:~# cd Downloads
+root@debian:~/Downloads# ls
+1  filekm  sublime_text_3  sublime_text_3_build_3211_x64.tar.bz2
+
+9. root@debian:~/Downloads# mv filekm fileanda
+root@debian:~/Downloads# ls
+1  fileanda  sublime_text_3  sublime_text_3_build_3211_x64.tar.bz2
+
+10. root@debian:~# whoami
+root
+
+11. root@debian:~# uname -a
+Linux debian 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2 (2019-08-28) x86_64 GNU/Linux
+
+12. root@debian:~# whereis nginx
+nginx: /usr/sbin/nginx /usr/lib/nginx /etc/nginx /usr/share/nginx /usr/share/man/man8/nginx.8.gz
+
+
